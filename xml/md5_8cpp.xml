@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="ru">
+  <compounddef id="md5_8cpp" kind="file" language="C++">
+    <compoundname>md5.cpp</compoundname>
+    <includes refid="md5_8h" local="yes">md5.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>cryptopp/hex.h</label>
+      </node>
+      <node id="6">
+        <label>cryptopp/md5.h</label>
+      </node>
+      <node id="1">
+        <label>md5.cpp</label>
+        <link refid="md5_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8cpp_1aabf7f9130cb18d96288e09c9d984c653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string MD5_hash</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>MD5_hash</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Получение хэш-кода по алгоритму md5. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сообщения для хэширования </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>хэш-код </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="md5.cpp" line="11" column="13" bodyfile="md5.cpp" bodystart="11" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="md5_8h" kindref="compound">md5.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">std::string<sp/><ref refid="md5_8cpp_1aabf7f9130cb18d96288e09c9d984c653" kindref="member">MD5_hash</ref>(std::string<sp/>msg)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">CryptoPP;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Создаем<sp/>объект-&quot;хэширователь&quot;<sp/>для<sp/>MD5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>Weak::MD5<sp/>hash;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>куда<sp/>запишем<sp/>результат</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>digest;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>создаем<sp/>цепочку<sp/>преобразования</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>StringSource(msg,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashFilter(hash,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HexEncoder(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>StringSink(digest))));<sp/><sp/></highlight><highlight class="comment">//<sp/>источник,<sp/>кодировщик<sp/>в<sp/>строку<sp/>цифр,<sp/>строка-приемник</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>выводим<sp/>сообщение<sp/>и<sp/>его<sp/>хэш</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>digest;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="md5.cpp"/>
+  </compounddef>
+</doxygen>

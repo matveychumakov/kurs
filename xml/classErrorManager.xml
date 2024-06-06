@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="ru">
+  <compounddef id="classErrorManager" kind="class" language="C++" prot="public">
+    <compoundname>ErrorManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::invalid_argument</basecompoundref>
+    <includes refid="Client_8h" local="no">Client.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classErrorManager_1a57ee672e09d85ba866babd045c01169d" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ErrorManager::ErrorManager</definition>
+        <argsstring>(const std::string &amp;what_arg)</argsstring>
+        <name>ErrorManager</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>what_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="76" column="10" bodyfile="Client.h" bodystart="76" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classErrorManager_1a0eeeda61e525cc153cf6246f1f38811a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ErrorManager::ErrorManager</definition>
+        <argsstring>(const char *what_arg)</argsstring>
+        <name>ErrorManager</name>
+        <param>
+          <type>const char *</type>
+          <declname>what_arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="78" column="10" bodyfile="Client.h" bodystart="78" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс обработки ошибок <ref refid="classErrorManager" kindref="compound">ErrorManager</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Менеджер вывода сообщений об ошибках </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>std::invalid_argument</label>
+      </node>
+      <node id="1">
+        <label>ErrorManager</label>
+        <link refid="classErrorManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>std::invalid_argument</label>
+      </node>
+      <node id="1">
+        <label>ErrorManager</label>
+        <link refid="classErrorManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client.h" line="73" column="1" bodyfile="Client.h" bodystart="74" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classErrorManager_1a57ee672e09d85ba866babd045c01169d" prot="public" virt="non-virtual"><scope>ErrorManager</scope><name>ErrorManager</name></member>
+      <member refid="classErrorManager_1a0eeeda61e525cc153cf6246f1f38811a" prot="public" virt="non-virtual"><scope>ErrorManager</scope><name>ErrorManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

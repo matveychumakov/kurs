@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="ru">
+  <compound refid="classClient" kind="class"><name>Client</name>
+    <member refid="classClient_1ac29ac58a4e74fa3634e058bcb3b502ca" kind="variable"><name>m_serverAddress</name></member>
+    <member refid="classClient_1a9b86cadfb81f24ea687e58021252fd6a" kind="variable"><name>m_serverPort</name></member>
+    <member refid="classClient_1a6ffb24711f88e4f6dc1f6a2b29a8a70b" kind="variable"><name>m_inputDataFile</name></member>
+    <member refid="classClient_1aa02078367fad0a8d118dfb3d140774fb" kind="variable"><name>m_outputDataFile</name></member>
+    <member refid="classClient_1aa652bf512d5b23654d456f56a677a6c3" kind="variable"><name>m_clientCredentialsFile</name></member>
+    <member refid="classClient_1a5a46036fa3bd2640a134b8836024738d" kind="function"><name>interactWithServer</name></member>
+    <member refid="classClient_1a358df55c9dc08e0a90169072fa6ba4c5" kind="function"><name>readVectorsFromFile</name></member>
+    <member refid="classClient_1ad42bb0731ca90d9ae6a0ef3ca61a22af" kind="function"><name>writeVectorsToFile</name></member>
+    <member refid="classClient_1a9d12d40010e32de931d562c6e8722d9f" kind="function"><name>readLoginAndPasswordFromFile</name></member>
+    <member refid="classClient_1abb302ca21e29a63e8a742b87e752f488" kind="function"><name>getServerAddress</name></member>
+    <member refid="classClient_1a2db7f0162b88edfa5368b0a1d4f2fee5" kind="function"><name>setServerAddress</name></member>
+    <member refid="classClient_1afd9db35e1482005e9ac4370ba5a36592" kind="function"><name>getServerPort</name></member>
+    <member refid="classClient_1a9d78a0a5ec16cb8d26af3445ac3eba52" kind="function"><name>setServerPort</name></member>
+    <member refid="classClient_1aad782c1100b02833cc1fa86ebd990483" kind="function"><name>getInputDataFile</name></member>
+    <member refid="classClient_1a14ac94a98f0c3f014621f794f889e78c" kind="function"><name>setInputDataFile</name></member>
+    <member refid="classClient_1a598df4faf99a4bafaf127b3b99929b7b" kind="function"><name>getOutputDataFile</name></member>
+    <member refid="classClient_1a3d4aae094ba001ebc91cac71545c852c" kind="function"><name>setOutputDataFile</name></member>
+    <member refid="classClient_1ada17e393a30cd59efba7860e73690750" kind="function"><name>getClientCredentialsFile</name></member>
+    <member refid="classClient_1a3b896d8d63b986140eb5a0e42a8bfa62" kind="function"><name>setClientCredentialsFile</name></member>
+  </compound>
+  <compound refid="structCons__fix" kind="struct"><name>Cons_fix</name>
+    <member refid="structCons__fix_1a037a0b0312caa181f5d213e0cb7d5480" kind="variable"><name>p</name></member>
+    <member refid="structCons__fix_1a264259fdd11fc003032346561ad520be" kind="function"><name>Cons_fix</name></member>
+    <member refid="structCons__fix_1a55b7a2b4a57f8bff0478e6dfd5c2c1e0" kind="function"><name>~Cons_fix</name></member>
+  </compound>
+  <compound refid="classErrorManager" kind="class"><name>ErrorManager</name>
+    <member refid="classErrorManager_1a57ee672e09d85ba866babd045c01169d" kind="function"><name>ErrorManager</name></member>
+    <member refid="classErrorManager_1a0eeeda61e525cc153cf6246f1f38811a" kind="function"><name>ErrorManager</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="Client_8cpp" kind="file"><name>Client.cpp</name>
+  </compound>
+  <compound refid="Client_8h" kind="file"><name>Client.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1adc137ec3d5eb853f01fb56847c1ead6d" kind="function"><name>help_print</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md5_8cpp" kind="file"><name>md5.cpp</name>
+    <member refid="md5_8cpp_1aabf7f9130cb18d96288e09c9d984c653" kind="function"><name>MD5_hash</name></member>
+  </compound>
+  <compound refid="md5_8h" kind="file"><name>md5.h</name>
+    <member refid="md5_8h_1a60054cd46e0dc2ed04249519a5291cda" kind="define"><name>CRYPTOPP_ENABLE_NAMESPACE_WEAK</name></member>
+    <member refid="md5_8h_1aabf7f9130cb18d96288e09c9d984c653" kind="function"><name>MD5_hash</name></member>
+  </compound>
+  <compound refid="unitTest_8cpp" kind="file"><name>unitTest.cpp</name>
+    <member refid="unitTest_8cpp_1a6889dfed8e3c30713ea303f95114decc" kind="function"><name>SUITE</name></member>
+    <member refid="unitTest_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>

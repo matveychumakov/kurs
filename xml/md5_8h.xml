@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="ru">
+  <compounddef id="md5_8h" kind="file" language="C++">
+    <compoundname>md5.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cryptopp/hex.h</includes>
+    <includes local="no">cryptopp/md5.h</includes>
+    <includedby refid="Client_8cpp" local="yes">Client.cpp</includedby>
+    <includedby refid="md5_8cpp" local="yes">md5.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>cryptopp/hex.h</label>
+      </node>
+      <node id="5">
+        <label>cryptopp/md5.h</label>
+      </node>
+      <node id="1">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>md5.cpp</label>
+        <link refid="md5_8cpp"/>
+      </node>
+      <node id="2">
+        <label>Client.cpp</label>
+        <link refid="Client_8cpp"/>
+      </node>
+      <node id="1">
+        <label>md5.h</label>
+        <link refid="md5_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="md5_8h_1a60054cd46e0dc2ed04249519a5291cda" prot="public" static="no">
+        <name>CRYPTOPP_ENABLE_NAMESPACE_WEAK</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="md5.h" line="15" column="9" bodyfile="md5.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8h_1aabf7f9130cb18d96288e09c9d984c653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string MD5_hash</definition>
+        <argsstring>(std::string msg)</argsstring>
+        <name>MD5_hash</name>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Получение хэш-кода по алгоритму md5. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сообщения для хэширования </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>хэш-код </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="md5.h" line="18" column="13" bodyfile="md5.cpp" bodystart="11" bodyend="25" declfile="md5.h" declline="18" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Заголовочный файл для модуля md5. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Чумаков М.Д. </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>01.05.2024 </para>
+</simplesect>
+<simplesect kind="copyright"><para>ИБСТ ПГУ </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cryptopp/hex.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRYPTOPP_ENABLE_NAMESPACE_WEAK<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cryptopp/md5.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">std::string<sp/><ref refid="md5_8h_1aabf7f9130cb18d96288e09c9d984c653" kindref="member">MD5_hash</ref>(std::string<sp/>msg);</highlight></codeline>
+    </programlisting>
+    <location file="md5.h"/>
+  </compounddef>
+</doxygen>

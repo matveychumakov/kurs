@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="ru">
+  <compounddef id="classClient" kind="class" language="C++" prot="public">
+    <compoundname>Client</compoundname>
+    <includes refid="Client_8h" local="no">Client.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1ac29ac58a4e74fa3634e058bcb3b502ca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Client::m_serverAddress</definition>
+        <argsstring></argsstring>
+        <name>m_serverAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="61" column="13" bodyfile="Client.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1a9b86cadfb81f24ea687e58021252fd6a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Client::m_serverPort</definition>
+        <argsstring></argsstring>
+        <name>m_serverPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="62" column="13" bodyfile="Client.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1a6ffb24711f88e4f6dc1f6a2b29a8a70b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Client::m_inputDataFile</definition>
+        <argsstring></argsstring>
+        <name>m_inputDataFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="63" column="16" bodyfile="Client.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1aa02078367fad0a8d118dfb3d140774fb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Client::m_outputDataFile</definition>
+        <argsstring></argsstring>
+        <name>m_outputDataFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="64" column="16" bodyfile="Client.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1aa652bf512d5b23654d456f56a677a6c3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Client::m_clientCredentialsFile</definition>
+        <argsstring></argsstring>
+        <name>m_clientCredentialsFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="65" column="16" bodyfile="Client.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1a5a46036fa3bd2640a134b8836024738d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Client::interactWithServer</definition>
+        <argsstring>()</argsstring>
+        <name>interactWithServer</name>
+        <briefdescription>
+<para>Главная функция для взаимодействия клиента с сервером </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classErrorManager" kindref="compound">ErrorManager</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при возникновении ошибки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="39" column="9" bodyfile="Client.cpp" bodystart="165" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a358df55c9dc08e0a90169072fa6ba4c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; uint32_t &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; uint32_t &gt; &gt; Client::readVectorsFromFile</definition>
+        <argsstring>()</argsstring>
+        <name>readVectorsFromFile</name>
+        <briefdescription>
+<para>Функция для получения векторов из файла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>возвращает массив векторов типа vector&lt;uint32_t&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="40" column="17" bodyfile="Client.cpp" bodystart="108" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1ad42bb0731ca90d9ae6a0ef3ca61a22af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client::writeVectorsToFile</definition>
+        <argsstring>(const std::vector&lt; uint32_t &gt; &amp;vectors)</argsstring>
+        <name>writeVectorsToFile</name>
+        <param>
+          <type>const std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>vectors</declname>
+        </param>
+        <briefdescription>
+<para>Функция для записи в файл результатов вычисления сервером </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="41" column="10" bodyfile="Client.cpp" bodystart="144" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a9d12d40010e32de931d562c6e8722d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>std::pair&lt; std::string, std::string &gt; Client::readLoginAndPasswordFromFile</definition>
+        <argsstring>()</argsstring>
+        <name>readLoginAndPasswordFromFile</name>
+        <briefdescription>
+<para>Функция для получения логина и пароля из файла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>упорядоченную пару значений типа string, string соответствующих логину и паролю </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="42" column="15" bodyfile="Client.cpp" bodystart="82" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1abb302ca21e29a63e8a742b87e752f488" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Client::getServerAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getServerAddress</name>
+        <briefdescription>
+<para>Метод получения для m_serverAddress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="45" column="9" bodyfile="Client.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a2db7f0162b88edfa5368b0a1d4f2fee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client::setServerAddress</definition>
+        <argsstring>(int address)</argsstring>
+        <name>setServerAddress</name>
+        <param>
+          <type>int</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Метод изменения для m_serverAddress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="46" column="10" bodyfile="Client.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1afd9db35e1482005e9ac4370ba5a36592" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Client::getServerPort</definition>
+        <argsstring>() const</argsstring>
+        <name>getServerPort</name>
+        <briefdescription>
+<para>Метод получения для m_serverPort. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="48" column="9" bodyfile="Client.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a9d78a0a5ec16cb8d26af3445ac3eba52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client::setServerPort</definition>
+        <argsstring>(int port)</argsstring>
+        <name>setServerPort</name>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Метод изменения для m_serverPort. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="49" column="10" bodyfile="Client.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1aad782c1100b02833cc1fa86ebd990483" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Client::getInputDataFile</definition>
+        <argsstring>() const</argsstring>
+        <name>getInputDataFile</name>
+        <briefdescription>
+<para>Метод получения для m_inputDataFile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="51" column="12" bodyfile="Client.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a14ac94a98f0c3f014621f794f889e78c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client::setInputDataFile</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>setInputDataFile</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Метод изменения для m_inputDataFile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="52" column="10" bodyfile="Client.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a598df4faf99a4bafaf127b3b99929b7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Client::getOutputDataFile</definition>
+        <argsstring>() const</argsstring>
+        <name>getOutputDataFile</name>
+        <briefdescription>
+<para>Метод получения для m_outputDataFile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="54" column="12" bodyfile="Client.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a3d4aae094ba001ebc91cac71545c852c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client::setOutputDataFile</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>setOutputDataFile</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Метод изменения для m_outputDataFile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="55" column="10" bodyfile="Client.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1ada17e393a30cd59efba7860e73690750" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Client::getClientCredentialsFile</definition>
+        <argsstring>() const</argsstring>
+        <name>getClientCredentialsFile</name>
+        <briefdescription>
+<para>Метод получения для m_clientCredentialsFile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="57" column="12" bodyfile="Client.cpp" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1a3b896d8d63b986140eb5a0e42a8bfa62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client::setClientCredentialsFile</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>setClientCredentialsFile</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Метод изменения для m_clientCredentialsFile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.h" line="58" column="10" bodyfile="Client.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс взаимодействия с сервером </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m_serverAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>адрес сервера </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_serverPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>порт сервера </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_inputDataFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя файла с векторами </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_outputDataFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя файла с результатами вычислений сервером </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m_clientCredentialsFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>имя файла с логином и паролем клиента </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="Client.h" line="35" column="1" bodyfile="Client.h" bodystart="35" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classClient_1ada17e393a30cd59efba7860e73690750" prot="public" virt="non-virtual"><scope>Client</scope><name>getClientCredentialsFile</name></member>
+      <member refid="classClient_1aad782c1100b02833cc1fa86ebd990483" prot="public" virt="non-virtual"><scope>Client</scope><name>getInputDataFile</name></member>
+      <member refid="classClient_1a598df4faf99a4bafaf127b3b99929b7b" prot="public" virt="non-virtual"><scope>Client</scope><name>getOutputDataFile</name></member>
+      <member refid="classClient_1abb302ca21e29a63e8a742b87e752f488" prot="public" virt="non-virtual"><scope>Client</scope><name>getServerAddress</name></member>
+      <member refid="classClient_1afd9db35e1482005e9ac4370ba5a36592" prot="public" virt="non-virtual"><scope>Client</scope><name>getServerPort</name></member>
+      <member refid="classClient_1a5a46036fa3bd2640a134b8836024738d" prot="public" virt="non-virtual"><scope>Client</scope><name>interactWithServer</name></member>
+      <member refid="classClient_1aa652bf512d5b23654d456f56a677a6c3" prot="private" virt="non-virtual"><scope>Client</scope><name>m_clientCredentialsFile</name></member>
+      <member refid="classClient_1a6ffb24711f88e4f6dc1f6a2b29a8a70b" prot="private" virt="non-virtual"><scope>Client</scope><name>m_inputDataFile</name></member>
+      <member refid="classClient_1aa02078367fad0a8d118dfb3d140774fb" prot="private" virt="non-virtual"><scope>Client</scope><name>m_outputDataFile</name></member>
+      <member refid="classClient_1ac29ac58a4e74fa3634e058bcb3b502ca" prot="private" virt="non-virtual"><scope>Client</scope><name>m_serverAddress</name></member>
+      <member refid="classClient_1a9b86cadfb81f24ea687e58021252fd6a" prot="private" virt="non-virtual"><scope>Client</scope><name>m_serverPort</name></member>
+      <member refid="classClient_1a9d12d40010e32de931d562c6e8722d9f" prot="public" virt="non-virtual"><scope>Client</scope><name>readLoginAndPasswordFromFile</name></member>
+      <member refid="classClient_1a358df55c9dc08e0a90169072fa6ba4c5" prot="public" virt="non-virtual"><scope>Client</scope><name>readVectorsFromFile</name></member>
+      <member refid="classClient_1a3b896d8d63b986140eb5a0e42a8bfa62" prot="public" virt="non-virtual"><scope>Client</scope><name>setClientCredentialsFile</name></member>
+      <member refid="classClient_1a14ac94a98f0c3f014621f794f889e78c" prot="public" virt="non-virtual"><scope>Client</scope><name>setInputDataFile</name></member>
+      <member refid="classClient_1a3d4aae094ba001ebc91cac71545c852c" prot="public" virt="non-virtual"><scope>Client</scope><name>setOutputDataFile</name></member>
+      <member refid="classClient_1a2db7f0162b88edfa5368b0a1d4f2fee5" prot="public" virt="non-virtual"><scope>Client</scope><name>setServerAddress</name></member>
+      <member refid="classClient_1a9d78a0a5ec16cb8d26af3445ac3eba52" prot="public" virt="non-virtual"><scope>Client</scope><name>setServerPort</name></member>
+      <member refid="classClient_1ad42bb0731ca90d9ae6a0ef3ca61a22af" prot="public" virt="non-virtual"><scope>Client</scope><name>writeVectorsToFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

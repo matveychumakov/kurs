@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="ru">
+  <compounddef id="structCons__fix" kind="struct" language="C++" prot="public">
+    <compoundname>Cons_fix</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCons__fix_1a037a0b0312caa181f5d213e0cb7d5480" prot="public" static="no" mutable="no">
+        <type><ref refid="classClient" kindref="compound">Client</ref> *</type>
+        <definition>Client* Cons_fix::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unitTest.cpp" line="7" column="9" bodyfile="unitTest.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCons__fix_1a264259fdd11fc003032346561ad520be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cons_fix::Cons_fix</definition>
+        <argsstring>()</argsstring>
+        <name>Cons_fix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unitTest.cpp" line="8" column="1" bodyfile="unitTest.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structCons__fix_1a55b7a2b4a57f8bff0478e6dfd5c2c1e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cons_fix::~Cons_fix</definition>
+        <argsstring>()</argsstring>
+        <name>~Cons_fix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unitTest.cpp" line="11" column="1" bodyfile="unitTest.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Client</label>
+        <link refid="classClient"/>
+      </node>
+      <node id="1">
+        <label>Cons_fix</label>
+        <link refid="structCons__fix"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="unitTest.cpp" line="6" column="1" bodyfile="unitTest.cpp" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structCons__fix_1a264259fdd11fc003032346561ad520be" prot="public" virt="non-virtual"><scope>Cons_fix</scope><name>Cons_fix</name></member>
+      <member refid="structCons__fix_1a037a0b0312caa181f5d213e0cb7d5480" prot="public" virt="non-virtual"><scope>Cons_fix</scope><name>p</name></member>
+      <member refid="structCons__fix_1a55b7a2b4a57f8bff0478e6dfd5c2c1e0" prot="public" virt="non-virtual"><scope>Cons_fix</scope><name>~Cons_fix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
